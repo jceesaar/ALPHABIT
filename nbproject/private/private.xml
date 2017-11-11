@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/infra/DAOOrdem.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/infra/JPAUtil.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/control/BeanUsuario.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/index.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/OrdemCadastro.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/domain/OrdemBR.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/infra/Ordem.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/control/LoginBean.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/domain/UsuarioBR.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/filter/FilterLogin.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/UsuarioAtt.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/admin/dashboard.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/UsuarioCadastro.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/OrdemList.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/control/BeanOrdem.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/infra/Usuario.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/WEB-INF/template/masterlayout.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/login.xhtml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/control/util/sessionUtil.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/src/java/infra/DAOUsuario.java</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/WEB-INF/glassfish-resources.xml</file>
+            <file>file:/C:/Users/Júlio%20Guimarães/Documents/GitHub/Site/web/UsuarioList.xhtml</file>
+        </group>
+    </open-files>
+</project-private>

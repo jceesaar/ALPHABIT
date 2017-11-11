@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Listagem Vagas</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/WEB-INF/template/masterlayout.xhtml">
+            <ui:define name="principal">
+                <f:view contentType="text/html">
+                    <center> <h2>Compre e venda Cryptocurrencys com Segurança - AlphaBIT</h2> </center>
+
+                    <h:form>
+                        <p:dialog header="Relatório de Ordens Cadastradas" modal="true"
+                                  closable="false" position="center"
+                                  widgetVar="modalLog"
+                                  minWidth="1300"
+                                  width="1300"
+                                  showEffect="slide"
+                                  draggable="false"
+                                  resizable="false"
+                                  visible="true">
+                            <center>
+                                <p:dataTable value="#{beanOrdem.listagem}" var="listar"
+                                             rows="3" paginator="true" rowsPerPageTemplate="15"
+
+                                             >
+                                    <p:column headerText="ID">
+                                        #{listar.ID}
+                                    </p:column>
+
+                                    <p:column headerText="Moeda">
+                                        #{listar.moeda}
+                                    </p:column>
+                                    <p:column headerText="Cotacao">
+                                R$ <h:outputText value="#{listar.cotacao}" >
+                                    <f:convertNumber maxFractionDigits="2" />
+                                </h:outputText>
+                                    </p:column>
+                                    <p:column headerText="Quantidade">
+                                        #{listar.valor} #{listar.moeda}S
+                                    </p:column>
+                                    <p:column headerText="Valor Final">
+                                R$ <h:outputText value="#{listar.valorFinal}" >
+                                    <f:convertNumber maxFractionDigits="2" />
+                                </h:outputText>
+                                    </p:column>
+                                    <p:column headerText="Remover">
+                                        <h:commandLink action="#{beanOrdem.remover(listar)}">Remover</h:commandLink>
+                                    </p:column>
+
+
+                                </p:dataTable>
+                            </center>
+                        </p:dialog>
+                    </h:form>
+                </f:view>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

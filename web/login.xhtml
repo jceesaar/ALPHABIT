@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>AlphaBIT</title>
+        <style>
+            body {
+                background-color: gray;
+            }
+
+            #img {
+                margin-top: 25px;
+            }
+        </style>      
+    </h:head>
+
+    <h:body>
+        <h:form prependId="false">
+            <center><img id="img" src="images/logo.png" width="580"/></center>
+            <p:dialog header="Login ALPHABIT:" modal="true"
+                      closable="false" position="center"
+                      widgetVar="modalLog"
+                      minWidth="300"
+                      width="350"
+                      showEffect="slide"
+                      draggable="false"
+                      resizable="false"
+                      visible="true">
+                <center>
+                    <p:messages for="validaSenhasLogin" id="msgValidaSenhasLogin"/>
+                    <br/>
+                    <h:panelGrid>
+                        <tr>
+                            <td><h:outputText value="Login: "/></td>
+                            <td><h:inputText id="usuario" size="15" value="#{loginBean.usuario.nome}"/></td>
+                        </tr>
+                        <tr>
+                                <td><h:outputText value="Senha: "/></td>
+                                <td><h:inputSecret id="senha" size="15" value="#{loginBean.usuario.senha}"/></td>
+                        </tr>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid columns="2">
+
+                        <h:commandButton value="Entrar" action="#{loginBean.logar()}"/>
+                        <h:commandButton value="Cadastrar" action="#{loginBean.cadastrar()}"/>
+                    </h:panelGrid>
+                </center>
+            </p:dialog>
+        </h:form>
+    </h:body>
+</html>
+

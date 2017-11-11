@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+    <h:head>
+        <title>Cadastrar Usuario</title>
+    </h:head>
+    <h:body>
+
+        <h:form prependId="false">
+            <p:dialog header="Cadastro" modal="true"
+                      closable="false" position="center"
+                      widgetVar="modalLog"
+                      minWidth="300"
+                      width="600"
+                      showEffect="slide"
+                      draggable="false"
+                      resizable="false"
+                      visible="true">
+                <center>
+
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Nome "/>
+                        <h:inputText id="nome"  value="#{beanUsuario.nome}"/>
+
+
+                        <h:outputText value="Email "/>
+                        <h:inputText id="email" value="#{beanUsuario.email}" required="true"
+                                     requiredMessage="Por favor, entre com seu email"
+                                     validatorMessage="Email inválido">
+                            <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>
+                            <p:watermark for="email" value="Endereço de Email" />
+                        </h:inputText> 
+
+                        <h:outputText value="Senha: "/>   
+                        <h:inputSecret id="senha" value="#{beanUsuario.senha}"/>
+                    </h:panelGrid>
+
+                    <br/>
+
+                    <h:commandButton value="Cadastrar" action="#{beanUsuario.salvar() }"/>
+
+                </center>
+            </p:dialog>
+        </h:form>
+
+    </h:body>
+</html>
+
